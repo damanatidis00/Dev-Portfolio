@@ -201,6 +201,16 @@ footer img {
   align-items: center;
 }
 
+.about-content {
+  padding: 60px;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 200px;
+}
+
 @media (max-width: 600px) {
   .imagerow {
     flex-direction: column;
@@ -214,5 +224,9 @@ footer img {
   .project-card p,
   h3 {
     text-align: center;
+  }
+
+  .about-flex {
+    flex-direction: column;
   }
 }
