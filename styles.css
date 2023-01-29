@@ -1,6 +1,18 @@
 :root {
   --primary-color: #d3b2bc;
   --secondary-color: #a3818b;
+  --background-color: #faebef;
+}
+
+.lightbackground {
+  background-color: var(--background-color);
+}
+.textcenter {
+  text-align: center;
+}
+
+.textleft {
+  text-align: left;
 }
 
 nav {
@@ -61,6 +73,15 @@ h2 {
   font-size: 36px;
   line-height: 54px;
   text-align: center;
+  margin: 20px;
+}
+
+h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 54px;
 }
 
 p {
@@ -69,26 +90,26 @@ p {
   font-weight: 400;
   font-size: 18px;
   line-height: 36px;
-  text-align: center;
 }
 
-button {
-  padding: 30px 80px;
+.smallbutton {
   background-color: var(--primary-color);
-  border-radius: 20px;
-  border: none;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
   text-align: center;
-  display: block;
-  margin: 0 auto;
+  border-radius: 10px;
+  text-align: center;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   transition: 100ms ease-in-out;
 }
-
-button:hover {
+.smallbutton:hover {
   background-color: var(--secondary-color);
-}
-.textcenter {
-  text-align: center;
 }
 .button {
   background-color: var(--primary-color);
@@ -103,8 +124,13 @@ button:hover {
   text-align: center;
   border-radius: 10px;
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: 100ms ease-in-out;
 }
 
+.button:hover {
+  background-color: var(--secondary-color);
+}
 .secondarybutton {
   padding: 20px 40px;
   border: 2px solid var(--secondary-color);
@@ -138,6 +164,26 @@ button:hover {
 
 .footerlink {
   margin-top: 30px;
+  font-size: 14px;
+}
+
+.small-link {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.project-images {
+  max-width: 300px;
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work-grid {
+  padding: 30px;
 }
 
 footer img {
@@ -151,5 +197,12 @@ footer img {
   }
   .grid-image {
     width: 50%;
+  }
+  .project-card {
+    flex-direction: column;
+  }
+  .project-card p,
+  h3 {
+    text-align: center;
   }
 }
